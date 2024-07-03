@@ -2,7 +2,7 @@ version: "3.5"
 services:
 
   # we use kamailio 5.7.5 built from source code
-  # kamailio has the ip 200.200.200.4
+  # kamailio has the ip 200.200.200.3
   # kamailio configuration file can be found here "/usr/local/etc/kamailio/kamailio.cfg"
   kamailio_sip_proxy:
     image: debian_11_kamailio:5.7.5
