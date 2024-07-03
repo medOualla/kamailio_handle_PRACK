@@ -38,9 +38,10 @@ This repository is a docker compose containing Kamailio as a SIP Proxy and SIPp 
   
 # 3. Building the Docker Images
 The Dockerfiles for Kamailio and SIPp are located in ***./kamailio_handle_PRACK/dockerfiles***. To set up the environment, you need to build a Docker image for Kamailio version 5.7.5 in the ***kamailio_handle_PRACK/dockerfiles/kamailio\ 5.7.5*** directory.
+
 If you already have the Kamailio Docker image, you can use it _and change the image value_ in the **docker-compose.yml** file. The same applies to the SIPp Dockerfile located in ***kamailio_handle_PRACK/dockerfiles/SIPp***.
 
-# 4. Steps to Build Docker Image
+# 4. Steps to Build Docker Images
 # 4.1. Building kamailio 5.7.5 docker image
 Navigate to the directory containing the kamailio 5.7.5 Dockerfile, then run the build command:
 ```bash
@@ -60,7 +61,9 @@ docker build -t debian-sipp:latest .
 ```
 
 # 5. Interact with the docker compose project
-You can interact with this docker compose project in two ways, the first one it to type directly the commands to launch the SIPp call, launch the sngrep application and gettings logs or execute the ***./kamailio_handle_PRACK/env.bash*** bash file which contains bash shortcuts to interact with the docker containrs like making calls, launching the sngrep on the containers... Read the ***./kamailio_handle_PRACK/env.bash*** file for more details.
+You can interact with this docker compose project in two ways, the first one it to type directly the commands to launch the SIPp call, launch the sngrep application and gettings logs or execute the ***./kamailio_handle_PRACK/env.bash*** bash file which contains bash shortcuts and one alias to interact with the docker containers like making calls, launching the sngrep on the containers...
+
+Read the ***./kamailio_handle_PRACK/env.bash*** file for more details.
 
 ## 5.1. Choice 1: Using env.bash Shortcuts and Aliases (Optional for Linux Users)
 
